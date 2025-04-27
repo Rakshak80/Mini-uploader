@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Dashboard - Mini Blogger</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Welcome, <span id="username"></span>!</h2>
+    <input type="text" id="website" placeholder="Enter your website/blog link">
+    <button onclick="saveWebsite()">Save Website</button>
+    <p id="status"></p>
+    <button onclick="logout()">Logout</button>
+  </div>
+<script src="script.js"></script>
+<script>
+  document.getElementById('username').innerText = localStorage.getItem('loggedInUser');
+</script>
+</body>
+</html>
